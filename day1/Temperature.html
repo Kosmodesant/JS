@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Градусы Цельсия в Градусы Фаренгейта</h1>
+    <h2>
+        <script>
+            "use strict";
+
+            //ВВОД ДАННЫХ
+            let tc = parseFloat(prompt('Введите температуру в градусах цельсия: ', 30));
+
+            //ОБРАБОТКА ДАННЫХ
+            let tf = tc * 9 / 5 + 32; //Переводим в фаренгейты
+            let result = Math.round(100 * tf) / 100; //округляем до 2х знаков
+
+            //ВЫВОД ДАННЫХ
+            alert(result);
+
+        </script>
+    </h2>
+</body>
+
+</html>
