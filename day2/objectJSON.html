@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>JSON (Java Script Object Notation)</h1>
+    <h2>
+        <script>
+            'use strict';
+
+            function showBook() {
+                document.write(this.title + " - " + this.price + '<br>');
+
+            }
+            //JSON 
+
+            let b1 = {
+                title: 'Learning Python',
+                price: 3500,
+                show: showBook,
+                showTitle: function () {
+                    document.write(this.title + '<br>');
+                },
+
+                showPrice: function () {
+                    document.write(this.price + '<br>');
+                }
+            };
+
+            for (let prop in b1)
+                console.log(prop + ' : ' + b1[prop]);
+
+            console.log(b1);
+            b1.show();
+            b1.showTitle();
+            b1.showPrice()
+
+
+        </script>
+    </h2>
+
+</body>
+
+</html>
