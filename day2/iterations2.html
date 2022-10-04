@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Циклы (For)</h1>
+    <h2>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                if (i == 3) continue;
+                if (i == 8) break;
+                console.log(i);
+            }
+
+            let rows = parseInt(prompt('Число строк: ', ''))
+            let cols = parseInt(prompt('Число колонок: ', ''))
+            document.write('<table border=1>');
+            for (let i = 1; i <= rows; i++) {
+                document.write('<tr>');
+                for (let j = 1; j <= cols; j++) {
+                    if ((i == 1) || (j == 1))
+                        document.write('<td style="background:red">');
+                    else
+                        document.write('<td>');
+                    document.write(i * j);
+                    document.write('</td>');
+                }
+                document.write('</tr>');
+            }
+
+            document.write('</table>');
+
+
+            let userName = "Sergey";
+            for (let i = 0; i < userName.length; i++) {
+                let ch = userName.charAt(i);
+                console.log(ch);
+            }
+
+            for (let i = userName.length - 1; i >= 0; i--) {
+                let ch = userName.charAt(i);
+                console.log(ch);
+            }
+
+        </script>
+    </h2>
+
+</body>
+
+</html>
