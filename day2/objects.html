@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Объекты1</h1>
+    <h2>
+        <script>
+            'use strict';
+            function showBook() {
+                document.write(this.title + " - " + this.price + '<br>');
+
+            }
+            //let b1 = new Object(); old object
+
+            let b1 = {};
+            b1.title = 'Улитка на склоне '; //Свойство
+            b1.price = 300; //Свойство
+            b1.show = showBook; //NOT showBook()
+
+
+            let b2 = {};
+            b2.title = 'Лестница в небо';
+            b2.price = 200;
+            b2.show = showBook;
+
+            //console.log(b1)
+            //console.log(b2)
+            b1.show(); //this == b1
+            b2.show(); //this == b2
+        </script>
+    </h2>
+
+</body>
+
+</html>
