@@ -42,6 +42,12 @@
             let s1 = JSON.stringify(b1);
             console.log(typeof s1); //string
             console.log(s1)
+            
+            b1= null;
+            
+            b1= JSON.parse(s1);
+            console.log(typeof b1); //object
+            console.log(b1);
 
         </script>
     </h2>
