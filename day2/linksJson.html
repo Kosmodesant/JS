@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Links</h1>
+    <h2>
+        <script>
+            'use strict';
+
+            function showLink() {
+                document.write('<a href="' + this.url + '">' + this.title + '</a>&nbsp;');
+
+            }
+            let link1 = {
+                title: "Google",
+                url: "https://www.google.ru/",
+                print : showLink
+            };
+            
+            let link2 = {
+                title: "Яндекс",
+                url: "https://ya.ru/",
+                print: showLink
+            };
+
+            link1.print();
+            link2.print();
+
+        </script>
+    </h2>
+
+</body>
+
+</html>
