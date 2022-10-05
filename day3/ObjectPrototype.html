@@ -12,22 +12,19 @@
         <script>
             'use strict';
 
-
-
             function Link(title, url) {
                 this.title = title; //public
-                //this.url = url;
+                this.url = url;
 
-                var _url = url; //private
+                //var _url = url; //private
             }
 
             Link.prototype.print = function (openInNewWindow) {
                 if (openInNewWindow)
-                    document.write(`<a href="${this.url}" target=_blank>${this.title}</a&nbsp;`)
+                    document.write(`<a href="${this.url}" target=_blank>${this.title}</a>&nbsp;`)
                 else
-                    document.write(`<a href="${this.url}">${this.title}</a&nbsp;`)
+                    document.write(`<a href="${this.url}">${this.title}</a>&nbsp;`)
             };
-
 
             let link1 = new Link("Google", "https://www.google.ru");
             let link2 = new Link("Яндекс", "https://ya.ru/");
