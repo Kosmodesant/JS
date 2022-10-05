@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>ArrayName</h1>
+    <h2>
+        <script>
+            'use strict';
+
+//Заполнение массива путем ввода через Prompt
+
+            var names = [];
+
+            do {
+            var userName = prompt('Введите имя: ','' );
+            if (userName)
+            names.push(userName);
+
+            } while(userName);
+
+            names.sort();
+
+            for (var i in names) {
+
+                document.write(names[i]);
+                document.write('<br>');
+            }
+
+        </script>
+    </h2>
+    <div id="array"></div>
+</body>
+
+</html>
