@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Array</h1>
+    <h2>
+        <script>
+            'use strict';
+            //var colors = new Array('red', 'green', 'blue');
+            var colors = ['red', 'green', 'blue']; //JSON;
+
+            console.log(colors);
+            console.log(colors.length);
+
+            colors[0] = 'pink';
+            colors[5] = 'orange';
+
+            //delete colors[5];
+
+
+            console.log(colors[0]);
+            console.log(colors[colors.length - 1]);
+
+            for (let i = 0; i < colors.length; i++) {
+
+                document.write(colors[i]);
+                document.write('<br>');
+            }
+
+            for (let i in colors) {
+
+                document.write(colors[i]);
+                document.write('<br>');
+            }
+            //last element
+            console.log(colors.join());
+            var last = colors.pop();
+            console.log(colors.join());
+            console.log(last);
+
+            colors.push('yellow');
+            console.log(colors.join());
+
+            //first element
+            colors.unshift('grey');
+            console.log(colors.join());
+            var first = colors.shift();
+            console.log(colors.join());
+            console.log(first);
+
+        </script>
+    </h2>
+
+</body>
+
+</html>
