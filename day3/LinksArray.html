@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Links</h1>
+    <h2>
+        <script>
+            'use strict';
+
+            function showLink(openInNewWindow) {
+                if (openInNewWindow)
+                    document.write(`<a href:"${this.url}" target=_blank>${this.title}</a>&nbsp;`);
+                else
+                    document.write(`<a href="${this.url}">${this.title}</a>&nbsp;`);
+            }
+
+            var links = [
+                {
+                    title: "Google",
+                    url: "https://www.google.ru/",
+                    print: showLink
+                },
+                {
+                    title: "Yandex",
+                    url: "https://ya.ru/",
+                    print: showLink
+                }
+            ];
+
+            for (let i in links)
+                links[i].print();
+
+
+
+        </script>
+    </h2>
+
+</body>
+
+</html>
